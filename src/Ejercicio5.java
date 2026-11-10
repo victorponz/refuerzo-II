@@ -5,7 +5,7 @@ public class Ejercicio5 {
         int[] numeros = {5, 7, 4, 3, 1, 6};
         System.out.println(mediana(numeros));
     }
-    public static double mediana(int numeros[]){
+    public static double mediana(int[] numeros){
         double mediana;
         // Ordenamos los números de menor a mayor, para poder coger los que están
         // en medio
