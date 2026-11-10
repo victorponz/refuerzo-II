@@ -15,14 +15,17 @@ public class Ejercicio3{
         for(int i = 0; i < digitos.length(); i++){
             // Convertimos a int el dígito situado en la posición `i`
             digito = Integer.parseInt("" + digitos.charAt(i));
+            // También se puede hacer así
+            // digito = Character.getNumericValue(digitos.charAt(i));
+
             // Y ahora acumulamos el dígito `i`
             suma += digito;
 
             // En el caso de que sea el último dígito, imprimimos el dígito, el signo `=` y la suma
-            if(i == digitos.length()-1){
+            if (i == digitos.length()-1){
                 resultado += digito + " = " + suma;
             } else {
-                // Aquí solo imprimimos el dígito y el signo `=`
+                // Aquí solo imprimimos el dígito y el signo `+`
                 resultado += digito + " + ";
             }
 
