@@ -2,7 +2,7 @@ public class EncadenandoPalabras {
     public static boolean jugar(String palabra) {
         String[] palabras = palabra.split("\\s+");
         String primera, ultima;
-        // Recorrer cada palabra
+        // Recorrer cada palabra menos la última porque no tiene siguiente
         for (int i = 0; i < palabras.length - 1; i++) {
             // Cogemos la última sílaba de la actual y la primera de la siguiente
             ultima = ultimaSilaba(palabras[i]);
