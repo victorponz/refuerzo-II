@@ -1,9 +1,6 @@
 public class EncadenandoPalabras {
-    /*
-    NO VA PARA EL EXAMEN
-     */
     public static boolean jugar(String palabra) {
-        String[] palabras = palabra.split(" ");
+        String[] palabras = palabra.split("\\s+");
         String primera, ultima;
         // Recorrer cada palabra
         for (int i = 0; i < palabras.length - 1; i++) {
